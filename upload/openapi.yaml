@@ -1,0 +1,29 @@
+openapi: "3.0.3"
+info:
+  version: "1"
+  title: "test"
+x-dashjoin:
+  x-functions:
+  - add
+  x-queries:
+  - group
+  x-schemas:
+  - dj/northwind/US_STATES
+security:
+- Basic_Auth: []
+paths:
+  /rest/function/add:
+    post:
+      operationId: "add"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              example:
+                x: 1
+                y: 2
+components:
+  securitySchemes:
+    Basic_Auth:
+      type: "http"
+      scheme: "basic"

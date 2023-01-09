@@ -1,0 +1,6 @@
+{
+    "ID": "openapi",
+    "map": {
+        "url": "file:upload/openapi.yaml"
+    }
+}
