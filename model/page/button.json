@@ -7,7 +7,7 @@
                 "widget": "markdown",
                 "text": "New Widget",
                 "title": "Source Code",
-                "markdown": "Pressing this button evaluates the expression and navigates to the resulting URL (must be a single string URL). Internal URLs look like \"/page/Home\".\n\n```\n{\n  \"widget\": \"button\"\n  \"text\": \"Goto Dashjoin Homepage\",\n  \"print\": \"\\\"https://www.dashjoin.com\\\"\"\n}\n```"
+                "markdown": "Pressing this button evaluates the expression and navigates to the resulting URL (must be a single string URL). Internal URLs look like \"/page/Home\":\n\n```\n{\n  \"widget\": \"button\"\n  \"text\": \"Goto Dashjoin Homepage\",\n  \"print\": \"\\\"https://www.dashjoin.com\\\"\"\n}\n```"
             },
             {
                 "widget": "button",
