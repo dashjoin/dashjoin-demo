@@ -6,7 +6,6 @@
         "admin"
     ],
     "type": "write",
-    "expression": "$doc2data($crawl(\"https://www.circl.lu/doc/misp/feed-osint/\")[6]).Event.Attribute",
     "oldData": "Delete All",
     "createSchema": true,
     "mappings": {
