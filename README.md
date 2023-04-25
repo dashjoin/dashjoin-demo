@@ -8,7 +8,7 @@ the initScripts configuration field (see the definition in model/dj-database).
 To install it, you can use the upload feature on the configuration 
 database (/resource/config/dj-database/dj%2Fconfig) or copy the files into
 your model folder manually.
-You can also have the platform install the app right from github
+You can also have the platform install the app right from GitHub
 upon startup. The easiest way to do so is by using docker:
 
 ```
