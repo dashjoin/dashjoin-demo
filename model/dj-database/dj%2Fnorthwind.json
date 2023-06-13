@@ -114,7 +114,6 @@
                                     "type": "number"
                                 }
                             },
-                            "widget": "text",
                             "layout": "vertical"
                         }
                     }
