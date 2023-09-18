@@ -25,7 +25,7 @@
             },
             {
                 "widget": "variable",
-                "text": "New Widget",
+                "text": "Set Variable",
                 "title": "More Complex Form (see https://dashjoin.github.io/ for options)",
                 "properties": {
                     "node": "string"
