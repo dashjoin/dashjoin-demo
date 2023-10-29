@@ -36,7 +36,7 @@ public class AppTest {
     public Object call(Object input, @SuppressWarnings("rawtypes") List args) throws Throwable {
       return null;
     }
-  }, "<a?a?a?a?:s>");
+  }, null);
 
   /**
    * allowed values for widget field
@@ -81,12 +81,6 @@ public class AppTest {
               "before-create", "after-create", "before-update", "after-update", "before-delete",
               "after-delete"}) {
             for (String expression : strings(jsonata("**." + x).evaluate(tree))) {
-
-              // TODO: remove this one this is fixed:
-              // https://github.com/dashjoin/jsonata-java/issues/19
-              if (expression.contains("$openJson") || expression.contains("exec")
-                  || expression.contains("query") || expression.contains("all"))
-                continue;
 
               // parse expression
               Jsonata expr = jsonata(expression);
