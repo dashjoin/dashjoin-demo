@@ -16,11 +16,11 @@ import java.util.Map.Entry;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import com.dashjoin.jsonata.Functions;
 import com.dashjoin.jsonata.Jsonata;
 import com.dashjoin.jsonata.Jsonata.JFunction;
 import com.dashjoin.jsonata.Jsonata.JFunctionCallable;
 import com.dashjoin.jsonata.json.Json;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Perform some checks on the App's JSON config
@@ -148,8 +148,9 @@ public class AppTest {
     expAndData.put("data", data);
     expAndData.put("expression", expr);
 
-    IOUtils.write(new ObjectMapper().writeValueAsString(expAndData), connection.getOutputStream(),
-        Charset.defaultCharset());
+    // TODO: remove replace once https://github.com/dashjoin/jsonata-java/issues/20 is fixed
+    String payload = Functions.string(expAndData, false).replace("\"result\"", "\\\"result\\\"");
+    IOUtils.write(payload, connection.getOutputStream(), Charset.defaultCharset());
     return Json.parseJson(new InputStreamReader(connection.getInputStream()));
   }
 
