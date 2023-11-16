@@ -6,14 +6,9 @@
         "children": [
             {
                 "widget": "chart",
-                "title": null,
                 "query": "orders-over-time",
                 "database": "northwind",
                 "chart": "bar",
-                "x": 1,
-                "y": 0,
-                "rows": 1,
-                "cols": 1,
                 "style": {
                     "elements.bar.backgroundColor": "green",
                     "plugins.title.text": "Orders in February",
@@ -25,11 +20,6 @@
             },
             {
                 "widget": "markdown",
-                "text": "New Widget",
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 1,
                 "markdown": "Timeline chart example. The x-axis is defined as a timeline. This causes dates with no value to be included with a value of 0:\n\n```\n{\n  \"widget\": \"chart\",\n  \"query\": \"orders-over-time\",\n  \"database\": \"northwind\",\n  \"chart\": \"bar\",\n  \"style\": {\n    \"elements.bar.backgroundColor\": \"green\",\n    \"plugins.title.text\": \"Orders in February\",\n    \"plugins.title.display\": \"true\",\n    \"scales.x.type\": \"time\",\n    \"scales.x.min\": \"1998-02-01\",\n    \"scales.x.max\": \"1998-02-28\"\n  }\n}\n```"
             }
         ]
