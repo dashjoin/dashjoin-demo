@@ -4,41 +4,46 @@
         "widget": "page",
         "children": [
             {
-                "widget": "markdown",
-                "text": "New Widget",
                 "title": "Source Code",
-                "markdown": "Pressing this button evaluates the expression and navigates to the resulting URL (must be a single string URL). Internal URLs look like \"/page/Home\":\n\n```\n{\n  \"widget\": \"button\"\n  \"text\": \"Goto Dashjoin Homepage\",\n  \"print\": \"\\\"https://www.dashjoin.com\\\"\"\n}\n```"
+                "markdown": "Pressing this button evaluates the expression and navigates to the resulting URL (must be a single string URL). Internal URLs look like \"/page/Home\":\n\n```\n{\n  \"widget\": \"button\"\n  \"text\": \"Goto Dashjoin Homepage\",\n  \"print\": \"\\\"https://www.dashjoin.com\\\"\"\n}\n```",
+                "widget": "markdown"
             },
             {
-                "widget": "button",
                 "text": "Goto Dashjoin Homepage",
-                "print": "",
                 "title": "Live Example",
-                "navigate": "\"http://www.dashjoin.com\""
+                "navigate": "\"http://www.dashjoin.com\"",
+                "widget": "button"
             },
             {
-                "widget": "markdown",
-                "text": "New Widget",
                 "title": "Source Code",
-                "markdown": "Pressing this button evaluates the expression and prints its result at the bottom of the screen.\n\n```\n{\n  \"widget\": \"button\"\n  \"text\": \"Call a function\",\n  \"print\": \"$call(\\\"invoke\\\", 3)\"\n}\n```"
+                "markdown": "Pressing this button evaluates the expression and prints its result at the bottom of the screen.\n\n```\n{\n  \"widget\": \"button\"\n  \"text\": \"Call a function\",\n  \"print\": \"$call(\\\"invoke\\\", 3)\"\n}\n```",
+                "widget": "markdown"
             },
             {
-                "widget": "button",
                 "text": "Call Log Function on query result",
                 "print": "$call(\"invoke\", 3)",
-                "title": "Live Example"
+                "title": "Live Example",
+                "widget": "button"
             },
             {
-                "widget": "markdown",
                 "text": "New Widget",
                 "title": "Source Code",
-                "markdown": "Pressing this button evaluates the expression and prints its result at the bottom of the screen.\n\n```\n{\n  \"widget\": \"button\"\n  \"text\": \"Call Log Function directly with hard coded parameters\",\n  \"print\": \"$echo(\\\"Back from \\\\\\\"the\\\\\\\" \\\\\\\\ server\\\"}\n```"
+                "markdown": "Pressing this button evaluates the expression and prints its result at the bottom of the screen.\n\n```\n{\n    \"text\": \"Call $alert() with form parameter\",\n    \"print\": \"$alert(\\\"You entered: \\\" & form.text)\",\n    \"widget\": \"button\",\n    \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n            \"text\": {\n                \"required\": true\n            }\n        }\n    }\n}\n```",
+                "widget": "markdown"
             },
             {
+                "text": "Call $alert() with form parameter",
+                "print": "$alert(\"You entered: \" & form.text)",
+                "title": "Live Example",
                 "widget": "button",
-                "text": "Call Log Function directly with hard-coded parameters",
-                "print": "$echo(\"Back from \\\"the\\\" \\\\ server\")",
-                "title": "Live Example"
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "text": {
+                            "required": true
+                        }
+                    }
+                }
             }
         ]
     }

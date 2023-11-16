@@ -4,27 +4,21 @@
         "widget": "page",
         "children": [
             {
-                "widget": "markdown",
                 "text": "New Widget",
-                "markdown": "The card widget is a container with a title section:\n\n```\n{\n  \"widget\": \"card\"\n  \"text\": \"Test\",\n  \"class\": [\"mat-elevation-z16\"],\n  \"style\": {\n    \"color\": \"red\"\n  },\n  \"children\": [\n    {\n      \"widget\" : \"text\",\n      \"text\" : \"New Widget\"\n    }\n  ]\n}\n```",
-                "title": "Source Code"
+                "markdown": "The card widget is a container with a title section:\n\n```\n{\n    \"widget\": \"card\",\n    \"text\": \"Test\",\n    \"children\": [\n        {\n            \"widget\": \"text\",\n            \"text\": \"New Widget\"\n        }\n    ],\n    \"title\": \"Live Example\"\n}\n```",
+                "title": "Source Code",
+                "widget": "markdown"
             },
             {
-                "widget": "card",
                 "text": "Test",
+                "title": "Live Example",
+                "widget": "card",
                 "children": [
                     {
-                        "widget": "text",
-                        "text": "New Widget"
+                        "text": "New Widget",
+                        "widget": "text"
                     }
-                ],
-                "class": [
-                    "mat-elevation-z16"
-                ],
-                "style": {
-                    "color": "red"
-                },
-                "title": "Live Example"
+                ]
             }
         ]
     }
