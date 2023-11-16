@@ -1,0 +1,16 @@
+{
+    "ID": "actionTable",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "expression": "$all(\"northwind\", \"EMPLOYEES\").{\"name\": LAST_NAME}",
+                "properties": {
+                    "alert": "$alert(\"You selected \" & $count(selected) & \" rows\")",
+                    "notify": "$notify(selected)"
+                },
+                "widget": "actionTable"
+            }
+        ]
+    }
+}

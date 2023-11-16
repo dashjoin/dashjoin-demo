@@ -1,0 +1,14 @@
+{
+    "ID": "diagram",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "nodes": "$all(\"northwind\", \"EMPLOYEES\").{\"database\": \"northwind\", \"table\": \"EMPLOYEES\", \"id\": EMPLOYEE_ID, \"data\": {\"label\": LAST_NAME}}",
+                "edges": "$all(\"northwind\", \"EMPLOYEES\").{\"source\": EMPLOYEE_ID, \"target\": REPORTS_TO}",
+                "title": "Org Chart Diagram",
+                "widget": "diagram"
+            }
+        ]
+    }
+}
