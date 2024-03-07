@@ -4,45 +4,32 @@
         "widget": "page",
         "children": [
             {
-                "widget": "chart",
                 "database": "northwind",
                 "chart": "bar",
                 "query": "group",
-                "x": 1,
-                "y": 0,
-                "rows": 1,
-                "cols": 1
+                "widget": "chart",
+                "size": 8
             },
             {
-                "widget": "chart",
-                "x": 1,
-                "y": 1,
-                "rows": 1,
-                "cols": 1,
                 "query": "firestore2",
                 "database": "sqlite",
-                "chart": "doughnut"
+                "chart": "doughnut",
+                "widget": "chart",
+                "size": 4
             },
             {
-                "widget": "table",
                 "database": "northwind",
                 "query": "group",
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 1
+                "widget": "table",
+                "size": 4
             },
             {
-                "widget": "table",
-                "x": 0,
-                "y": 1,
-                "rows": 1,
-                "cols": 1,
                 "query": "cypher",
                 "database": "*",
-                "graph": true
+                "graph": true,
+                "widget": "table",
+                "size": 8
             }
-        ],
-        "pageLayout": "grid"
+        ]
     }
 }
