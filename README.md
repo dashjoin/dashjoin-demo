@@ -11,6 +11,7 @@ your model folder manually.
 You can also have the platform install the app right from GitHub
 upon startup. The easiest way to do so is by using docker:
 
+
 ```
 docker run -p 8080:8080 -e DJ_ADMIN_PASS=djdjdj -e DASHJOIN_HOME=dashjoin-demo -e DASHJOIN_APPURL=https://github.com/dashjoin/dashjoin-demo dashjoin/platform
 ```
