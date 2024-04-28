@@ -5,7 +5,7 @@
         "children": [
             {
                 "database": "northwind",
-                "chart": "line",
+                "chart": "bar",
                 "query": "group",
                 "widget": "chart",
                 "size": 8
