@@ -1,0 +1,7 @@
+{
+    "active": false,
+    "ID": "@EVERYONE",
+    "roles": [
+        "authenticated"
+    ]
+}
