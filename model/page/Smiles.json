@@ -1,0 +1,31 @@
+{
+    "ID": "Smiles",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "title": "Molecule Viewer",
+                "icon": "",
+                "href": "/full/Smiles",
+                "text": "Click here for full screen view",
+                "widget": "text"
+            },
+            {
+                "text": "variable.smiles",
+                "widget": "smiles"
+            },
+            {
+                "widget": "variable",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "smiles": {
+                            "widget": "auto complete",
+                            "options": "['C', 'CC', 'C#C', 'C=C', 'C1CCCCC1', 'OC[C@@H](O1)[C@@H](O)[C@H](O)[C@@H](O)[C@H](O)1']"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}
