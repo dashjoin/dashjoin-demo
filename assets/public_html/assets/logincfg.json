@@ -1,18 +1,11 @@
 {
     "signInTabText": "My Dashjoin",
-    "signInCardTitleText": "Sign In",
-    "emailText": "E-Mail or Username",
-    "registerTabText": "New User",
-    "resetPasswordTabText": "Reset My Password",
-    "resetPasswordInputText": "Enter your E-Mail. Password reset instructions will be sent",
     "emailLoginEnabled": true,
+    "passwordResetEnabled": true,
     "registrationEnabled": true,
-    "guestEnabled": false,
-    "guestLoginEnabled": true,
+    "guestLoginEnabled": false,
     "providers": "google",
-
-    "backgroundImage":"assets/loginbg.jpg",
+    "backgroundImage": "assets/loginbg.jpg",
     "className": "dashjoin",
-
     "openIdConfigs": []
 }
