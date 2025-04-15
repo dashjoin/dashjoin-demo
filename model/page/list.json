@@ -1,0 +1,28 @@
+{
+    "ID": "list",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "mode": "mobile",
+                "title": "Mobile table display",
+                "expression": "$all('northwind', 'SHIPPERS').($ ~> |$|{'icon': 'store'}|)",
+                "widget": "table",
+                "primaryText": "COMPANY_NAME",
+                "secondaryText": "PHONE",
+                "tertiaryText": " ",
+                "leftIcon": "icon"
+            },
+            {
+                "mode": "auto",
+                "title": "Responsive table display",
+                "expression": "$all('northwind', 'SHIPPERS').($ ~> |$|{'icon': 'store'}|)",
+                "widget": "table",
+                "primaryText": "COMPANY_NAME",
+                "secondaryText": "PHONE",
+                "tertiaryText": " ",
+                "leftIcon": "icon"
+            }
+        ]
+    }
+}
