@@ -1,0 +1,17 @@
+{
+    "ID": "datagrid",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "title": "Edit Employees",
+                "expression": "$all('northwind', 'EMPLOYEES').{'EMPLOYEE_ID': EMPLOYEE_ID, 'FIRST_NAME':FIRST_NAME, 'LAST_NAME':LAST_NAME, 'CITY':CITY}",
+                "onchange": "$update('northwind', 'EMPLOYEES', id, updatedRow)",
+                "ondelete": "$delete('northwind', 'EMPLOYEES', id)",
+                "oncreate": "$create('northwind', 'EMPLOYEES', {'EMPLOYEE_ID': $adHocQuery('northwind', 'select max(EMPLOYEE_ID)+1 as X from EMPLOYEES').X, 'LAST_NAME': ' ', 'FIRST_NAME': ' '})",
+                "columns": "[{'field': 'FIRST_NAME', 'editable':true, 'width': 150}, {'field': 'LAST_NAME', 'editable':true}, {'valueOptions': $adHocQuery('northwind', 'select distinct CITY as X from EMPLOYEES').X,'type':'singleSelect','field': 'CITY', 'editable':true}]",
+                "widget": "datagrid"
+            }
+        ]
+    }
+}
