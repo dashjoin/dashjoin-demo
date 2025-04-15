@@ -1,0 +1,18 @@
+{
+    "ID": "tree",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "title": "sidenav tree (simple)",
+                "expression": "[{\"text\": \"Info\", \"icon\": \"info\", \"href\": \"/page/Info\"}, {\"text\": \"Home\", \"icon\": \"home\", \"href\": \"/page/Info\"}]",
+                "widget": "tree"
+            },
+            {
+                "title": "sidenav tree (nested)",
+                "expression": "[{\"data\": {\"text\": \"Menu\",\"icon\": \"person\"},\"children\": [{\"text\": \"Info\", \"icon\": \"info\", \"href\": \"/page/Info\"}, {\"text\": \"Home\", \"icon\": \"home\", \"href\": \"/page/Info\"}]}]",
+                "widget": "tree"
+            }
+        ]
+    }
+}
