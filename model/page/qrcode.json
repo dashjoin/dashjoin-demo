@@ -1,0 +1,55 @@
+{
+    "ID": "qrcode",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "title": "Show QRCode",
+                "display": "{\"qrcode\": \"http://dashjoin.com\"}",
+                "widget": "display"
+            },
+            {
+                "print": "form",
+                "title": "Scan QR code",
+                "widget": "button",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "qrcode": {
+                            "widget": "qrcode"
+                        }
+                    }
+                }
+            },
+            {
+                "print": "form",
+                "title": "Upload picture from camera",
+                "widget": "button",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "camera": {
+                            "widget": "binary file",
+                            "capture": "user"
+                        }
+                    }
+                }
+            },
+            {
+                "print": "form",
+                "title": "Upload video from camera",
+                "widget": "button",
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "video": {
+                            "widget": "binary file",
+                            "capture": "user",
+                            "accept": "video/*"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}
