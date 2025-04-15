@@ -1,0 +1,19 @@
+{
+    "ID": "mdxeditor",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "markdown": "${context}",
+                "context": "$read('northwind', 'EMPLOYEES', 2).NOTES",
+                "title": "Edit CV",
+                "properties": {
+                    "selection": "$alert('selection:' & selection)",
+                    "all": "$alert('all:' & markdown)"
+                },
+                "expression": "{\"menu\": [{\"type\": \"select\", \"title\": \"tooltip\", \"label\": \"My Menu\", \"items\": [ { \"label\": \"selection\", \"value\": \"selection\" },{\"label\": \"all\", \"value\": \"all\" } ]} ]}",
+                "widget": "mdxeditor"
+            }
+        ]
+    }
+}
