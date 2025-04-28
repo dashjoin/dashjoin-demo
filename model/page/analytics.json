@@ -1,0 +1,37 @@
+{
+    "ID": "analytics",
+    "layout": {
+        "widget": "page",
+        "children": [
+            {
+                "columns": [
+                    {
+                        "name": "SHIP_COUNTRY",
+                        "aggregation": "GROUP_BY"
+                    },
+                    {
+                        "name": "ORDER_ID",
+                        "aggregation": "COUNT"
+                    }
+                ],
+                "filter": [
+                    {
+                        "name": "FREIGHT",
+                        "operator": ">=",
+                        "input": "slider"
+                    },
+                    {
+                        "name": "SHIP_VIA",
+                        "operator": "=",
+                        "input": "select"
+                    }
+                ],
+                "title": "Analytics",
+                "database": "northwind",
+                "table": "ORDERS",
+                "chart": "bar",
+                "widget": "analytics"
+            }
+        ]
+    }
+}
