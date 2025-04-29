@@ -1,0 +1,6 @@
+{
+    "ID": "tool",
+    "djClassName": "org.dashjoin.function.Invoke",
+    "expression": "($res := $all('northwind', 'EMPLOYEES', {'LAST_NAME': lastname}); $echo(lastname); $echo($res); $res;)",
+    "comment": "AI tool"
+}
