@@ -4,7 +4,7 @@
         "widget": "page",
         "children": [
             {
-                "nodes": "$adHocQueryGraph('northwind', 'match p=(x:EMPLOYEES)-[:REPORTS_TO]-(y) return p').p",
+                "nodes": "$adHocQueryGraph('northwind', 'match p=(x:EMPLOYEES)-[:REPORTS_TO]->(y) return p').p",
                 "title": "Graph Widget (pre-configured with OpenCypher query)",
                 "widget": "graph"
             }
