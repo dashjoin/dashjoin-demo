@@ -26,7 +26,6 @@
                     },
                     {
                         "widget": "tree",
-                        "text": "custom instance layout",
                         "query": "orgchart",
                         "database": "northwind",
                         "title": "Org Chart"
