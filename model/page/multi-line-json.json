@@ -2,7 +2,6 @@
     "ID": "multi-line-json",
     "layout": {
         "widget": "page",
-        "pageLayout": "horizontal",
         "children": [
             {
                 "widget": "markdown",

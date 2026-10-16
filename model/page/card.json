@@ -4,7 +4,6 @@
         "widget": "page",
         "children": [
             {
-                "text": "New Widget",
                 "markdown": "The card widget is a container with a title section:\n\n```\n{\n    \"widget\": \"card\",\n    \"text\": \"Test\",\n    \"children\": [\n        {\n            \"widget\": \"text\",\n            \"text\": \"New Widget\"\n        }\n    ],\n    \"title\": \"Live Example\"\n}\n```",
                 "title": "Source Code",
                 "widget": "markdown"

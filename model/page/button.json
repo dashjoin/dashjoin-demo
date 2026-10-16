@@ -26,7 +26,6 @@
                 "widget": "button"
             },
             {
-                "text": "New Widget",
                 "title": "Source Code",
                 "markdown": "Pressing this button evaluates the expression and prints its result at the bottom of the screen.\n\n```\n{\n    \"text\": \"Call $alert() with form parameter\",\n    \"print\": \"$alert(\\\"You entered: \\\" & form.text)\",\n    \"widget\": \"button\",\n    \"schema\": {\n        \"type\": \"object\",\n        \"properties\": {\n            \"text\": {\n                \"required\": true\n            }\n        }\n    }\n}\n```",
                 "widget": "markdown"

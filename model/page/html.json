@@ -2,7 +2,6 @@
     "ID": "html",
     "layout": {
         "widget": "page",
-        "pageLayout": "horizontal",
         "children": [
             {
                 "widget": "html",

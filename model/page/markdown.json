@@ -2,7 +2,6 @@
     "ID": "markdown",
     "layout": {
         "widget": "page",
-        "pageLayout": "horizontal",
         "children": [
             {
                 "widget": "markdown",
@@ -12,19 +11,16 @@
             },
             {
                 "widget": "display",
-                "text": "New Widget",
                 "display": "{\"database\": \"northwind\", \"table\": \"EMPLOYEES\", \"pk1\": 1, \"page\":\"markdown\"}",
                 "title": "Show an employee record using this page"
             },
             {
                 "widget": "display",
-                "text": "New Widget",
                 "display": "value.LAST_NAME",
                 "title": "Last Name"
             },
             {
                 "widget": "display",
-                "text": "New Widget",
                 "title": "Boss' Last Name",
                 "display": "$traverse(database, table, pk1, \"REPORTS_TO\").LAST_NAME"
             }

@@ -2,7 +2,6 @@
     "ID": "chart-timeline",
     "layout": {
         "widget": "page",
-        "pageLayout": "grid",
         "children": [
             {
                 "widget": "chart",
