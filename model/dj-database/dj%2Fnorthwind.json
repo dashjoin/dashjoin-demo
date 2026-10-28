@@ -63,15 +63,12 @@
                                 "body": {
                                     "type": "string",
                                     "widget": "textarea",
-                                    "layout": "horizontal",
                                     "style": {
                                         "width": "300px",
                                         "height": "100px"
                                     }
                                 }
-                            },
-                            "widget": "text",
-                            "layout": "vertical"
+                            }
                         }
                     },
                     {
@@ -99,14 +96,12 @@
                                 },
                                 "NAME": {
                                     "type": "string",
-                                    "widget": "textarea",
-                                    "layout": "horizontal"
+                                    "widget": "textarea"
                                 },
                                 "STATE_ID": {
                                     "type": "number"
                                 }
-                            },
-                            "layout": "vertical"
+                            }
                         }
                     }
                 ]
